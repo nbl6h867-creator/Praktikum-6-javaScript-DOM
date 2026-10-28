@@ -1,0 +1,38 @@
+<hr />
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
+<h2>Mini Project : Pendaftaran Workshop</h2>
+<div class="workshop-container">
+  <form id="formWorkshop" novalidate>
+    <div class="input-group">
+      <label for="namaWorkshop">Nama Lengkap (Max 50 karakter):</label>
+      <input
+        id="namaWorkshop"
+        type="text"
+        maxlength="50"
+        placeholder="Masukkan nama Anda"
+      />
+      <small>Karakter tersisa: <span id="sisaKarakter">50</span></small>
+    </div>
+
+    <div class="input-group">
+      <label for="emailWorkshop">Email:</label>
+      <input id="emailWorkshop" type="email" placeholder="contoh@email.com" />
+    </div>
+
+    <div class="input-group">
+      <label for="sesiWorkshop">Pilihan Sesi:</label>
+      <select id="sesiWorkshop">
+        <option value="">-- Pilih Sesi --</option>
+        <option value="pagi">Sesi Pagi (09:00 - 12:00)</option>
+        <option value="siang">Sesi Siang (13:00 - 16:00)</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+      <button type="submit" class="btn-submit">Daftar Workshop</button>
+      <button type="reset" id="resetWorkshop" class="btn-reset">Reset</button>
+    </div>
+  </form>
+  <p id="pesanWorkshop" aria-live="polite"></p>
+</div>
